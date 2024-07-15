@@ -11,7 +11,7 @@ const exercises = await getCollection('exercises', ({slug}) => CONTENT_SLUGS.inc
 	<main>
     <ul class="exercise-list">
       {exercises.map((exercise) => (
-        <a href={`/${exercise.slug}`}>
+        <a href={`/lm/${exercise.slug}`}>
           <div class="exercise">
             <span>#{exerciseOrder(exercise.slug)}</span>
             <span>{exercise.data.title}</span>
