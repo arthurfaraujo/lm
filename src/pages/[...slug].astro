@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content'
+
+export async function getStaticPaths() {
+  const exercises = await getCollection('exercises')
+
+  return exercises.map(exercise => ({
+    params: { slug: exercise.slug },
+    props: {exercise}
+  }))
+}
+
+const { exercise } = Astro.props
+
+const {Content} = await exercise?.render()
+---
+
+<Content />

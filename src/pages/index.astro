@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content'
+import { CONTENT_SLUGS } from '../consts';
+
+const exerciseOrder = (exercise: string) => CONTENT_SLUGS.indexOf(exercise) + 1
+const exercises = await getCollection('exercises', ({slug}) => CONTENT_SLUGS.includes(slug))
+---
+
+<Layout title="Markup Language Exercises">
+	<main>
+    <ul class="exercise-list">
+      {exercises.map((exercise) => (
+        <a href={`/${exercise.slug}`}>
+          <div class="exercise">
+            <span>#{exerciseOrder(exercise.slug)}</span>
+            <span>{exercise.data.title}</span>
+          </div>
+        </a>
+      ))}
+    </ul>
+	</main>
+</Layout>

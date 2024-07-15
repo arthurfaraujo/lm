@@ -1,10 +1,51 @@
+---
+title: Tables
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://erikflowers.github.io/weather-icons/css/weather-icons.css">
+  <style>
+    .weather {
+      width: 20%;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 12px;
+      background-color: rgb(240, 248, 255);
+    }
+    .weather th, .weather td {
+      border: 1px solid #000;
+      padding: 5px;
+    }
+    .weather thead {
+      background-color: rgb(168, 218, 213);
+    }
+    .weather tr:hover {
+      background-color: rgb(168, 218, 213);
+    }
+    .grades {
+      text-align: center;
+      min-width: 300px;
+      width: 50%;
+      margin: auto;
+      margin-top: 50px;
+      border-bottom: 1px solid #000;  
+      border-top: 1px solid #000;
+      border-collapse: collapse;
+    }
+    .grades tbody tr:nth-child(odd) {
+      background-color: #f0f8ff;
+    }
+    .grades th, .grades td {
+      padding: 5px;
+    }
+    .name {
+      text-align: left;
+    }
+  </style>
   <title>Table Styles</title>
 </head>
 <body>
