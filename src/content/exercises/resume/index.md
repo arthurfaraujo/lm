@@ -57,7 +57,7 @@ title: Curriculum
     <header>
       <h1>Pedro Gomes da Silva <a href="#">§</a></h1>
     </header>
-    <img src="resume/avatar.png" alt="Pessoa" />
+    <img src="avatar.png" alt="Pessoa" />
     <p><b>Nascimento:</b> <em>11/09/2002</em></p>
     <p><b>E-mail:</b> <em>flamengo2023@gmail.com</em></p>
     <p><b>Telefone:</b> <em>83940028922</em></p>
@@ -71,7 +71,7 @@ title: Curriculum
       ipsum dolor sit amet consectetur adipisicing elit. Iste necessitatibus,
       voluptatem obcaecati sed dolorum totam nulla iusto deserunt adipisci, illo
       fugit esse minus corporis quis! Ab quas placeat dolor eos!
-      <a href="/resume/resume.html">Leia mais!</a>
+      <a href="resume.html">Leia mais!</a>
     </p>
     <h2 id="sumario">Sumário <a href="#sumario">§</a></h2>
     <ul>
