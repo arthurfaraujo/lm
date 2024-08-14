@@ -1,4 +1,5 @@
 export const CONTENT_SLUGS = [
   "resume",
-  "table"
+  "table",
+  "layout-grid-flex"
 ]
