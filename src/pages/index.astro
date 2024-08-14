@@ -4,7 +4,8 @@ import { getCollection } from 'astro:content'
 import { CONTENT_SLUGS } from '../consts';
 
 const exerciseOrder = (exercise: string) => CONTENT_SLUGS.indexOf(exercise) + 1
-const exercises = await getCollection('exercises', ({slug}) => CONTENT_SLUGS.includes(slug))
+const exercises = (await getCollection('exercises', ({slug}) => CONTENT_SLUGS.includes(slug))).sort((a, b) => exerciseOrder(a.slug) - exerciseOrder(b.slug))
+
 ---
 
 <Layout title="Markup Language Exercises">
